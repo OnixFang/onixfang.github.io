@@ -1,15 +1,10 @@
-#navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
 #welcome-section {
+  background-image: url('./img/code.png');
   height: 100vh;
 }
 
-@media(max-width: 900px) {
+@media (max-width: 900px) {
   #welcome-section {
-    color: red;
+    margin: 0;
   }
 }
