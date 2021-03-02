@@ -9,31 +9,64 @@
 
 <body>
   <div class="navbar-fixed">
-    <div class="black-cover"></div>
+    <!-- <div class="black-cover"></div> -->
     <nav id="navbar" class="transparent-navbar">
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo">Ulises' Portfolio</a>
-        <ul class="right">
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a id="profile-link" href="https://github.com/onixfang" target="_blank">My GitHub</a>
-          </li>
-        </ul>
+        <div class="row">
+          <div class="col">
+            <a href="#" class="brand-logo">UT</a>
+          </div>
+          <ul class="right">
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a id="profile-link" href="https://github.com/onixfang" target="_blank">My GitHub</a>
+            </li>
+            <li>
+              <a href="/about-me">About me</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   </div>
 
   <section id="welcome-section" class="row valign-wrapper">
-    <div class="col s12 white-text center">
-      <h1>I has text.</h1>
-      <h2>And this guy has more text</h2>
+    <div class="hero-wrapper">
+      <div class="hero-content white-text">
+        <div class="theme-header">
+          <h1>Ulises Taveras</h1>
+        </div>
+        <div class="theme-header">
+          <h2>Full-stack developer</h2>
+        </div>
+        <a href="/about-me" class="btn secondary">About Me</a>
+      </div>
+      <div class="hero-picture">
+        <img src="img/me.jpg" alt="Ulises Taveras">
+      </div>
     </div>
   </section>
   <section id="projects" class="row">
-    <div class="project-tile">
-      <a href="http://githubviewer2.herokuapp.com" target="_blank">githubviewer2</a>
+    <div class="row center">
+      <h1>My projects</h1>
+    </div>
+    <div class="row">
+      <div class="col s12 m6 l4 project-tile">
+        <a href="http://githubviewer2.herokuapp.com/" target="_blank">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img src="./img/githubviewer2.png">
+              <span class="card-title black-text">Github Viewer 2</span>
+            </div>
+            <div class="card-content black-text">
+              <p>A very simple app that uses GitHub's API to search for users. I made it as part of PluralSight's
+                AngularJS course, but remade it later after learning Angular 2+. Try "onixfang" in the search bar!</p>
+            </div>
+          </div>
+        </a>
+      </div>
     </div>
   </section>
 

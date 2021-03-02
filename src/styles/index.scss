@@ -1,8 +1,52 @@
 @import "../../node_modules/materialize-css/dist/css/materialize.min.css";
 @import "./overrides.scss";
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+@media screen and (max-width: 499px) {
+  h1,
+  h2 {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  h1,
+  h2 {
+    font-size: 2em;
+  }
+}
+
+body {
+  background-color: #444;
+}
+
 .transparent-navbar {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.center-header {
+  display: flex;
+  justify-content: center;
+}
+
+.theme-header {
+  position: relative;
+  overflow: hidden;
+
+  h1,
+  h2 {
+    position: relative;
+    text-decoration: underline;
+    text-decoration-color: rgb(146, 30, 30);
+  }
 }
 
 .black-cover {
@@ -13,13 +57,63 @@
 }
 
 #welcome-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)),
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.7)),
     url("../img/code.png");
   height: 100vh;
+
+  &.valign-wrapper {
+    justify-content: space-between;
+  }
+
+  .hero-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+
+      h1,
+      h2 {
+        margin-bottom: 10px;
+      }
+
+      .btn {
+        margin-top: 20px;
+      }
+    }
+
+    .hero-picture {
+      padding: 20px;
+
+      img {
+        width: 100%;
+        height: auto;
+        clip-path: circle();
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+
+      .hero-picture {
+        order: 1;
+      }
+
+      .hero-content {
+        order: 2;
+      }
+    }
+  }
 }
 
-@media (max-width: 900px) {
-  #welcome-section {
-    margin: 0;
-  }
+#projects {
+  background-color: #ddd;
+
+  // .card {
+  //   border: 1px #fff solid;
+  // }
 }
