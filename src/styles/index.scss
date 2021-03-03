@@ -1,59 +1,10 @@
-@import "../../node_modules/materialize-css/dist/css/materialize.min.css";
-@import "./overrides.scss";
+@import "./reset.scss";
+@import "./color.scss";
+@import "./typography.scss";
+@import "./components.scss";
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-@media screen and (max-width: 499px) {
-  h1,
-  h2 {
-    font-size: 3em;
-  }
-}
-
-@media screen and (max-width: 415px) {
-  h1,
-  h2 {
-    font-size: 2em;
-  }
-}
-
-body {
-  background-color: #444;
-}
-
-.transparent-navbar {
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.center-header {
-  display: flex;
-  justify-content: center;
-}
-
-.theme-header {
-  position: relative;
-  overflow: hidden;
-
-  h1,
-  h2 {
-    position: relative;
-    text-decoration: underline;
-    text-decoration-color: rgb(146, 30, 30);
-  }
-}
-
-.black-cover {
-  position: absolute;
-  background-color: #000;
-  width: 100%;
-  height: 100%;
+* {
+  color: #fff;
 }
 
 #welcome-section {
@@ -61,15 +12,10 @@ body {
     url("../img/code.png");
   height: 100vh;
 
-  &.valign-wrapper {
-    justify-content: space-between;
-  }
-
   .hero-wrapper {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
 
     .hero-content {
       display: flex;
@@ -87,12 +33,28 @@ body {
     }
 
     .hero-picture {
-      padding: 20px;
+      position: relative;
+      margin: 20px;
+      transition: transform 100ms;
 
       img {
         width: 100%;
         height: auto;
-        clip-path: circle();
+        border-radius: 50%;
+        box-shadow: 0px 15px 15px #000;
+      }
+
+      &:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+
+        img {
+          box-shadow: 0px 20px 7px #000;
+        }
+      }
+
+      &:active {
+        transform: scale(0.95);
       }
     }
 
@@ -101,6 +63,7 @@ body {
 
       .hero-picture {
         order: 1;
+        max-width: 225px;
       }
 
       .hero-content {
@@ -111,8 +74,6 @@ body {
 }
 
 #projects {
-  background-color: #ddd;
-
   // .card {
   //   border: 1px #fff solid;
   // }
