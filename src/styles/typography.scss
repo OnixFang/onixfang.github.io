@@ -1,0 +1,21 @@
+// Google Font
+@import url("https://fonts.googleapis.com/css2?family=Jura&family=Krona+One&display=swap");
+
+// Font stack
+$font-stack: Jura, Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+
+html {
+  font-family: $font-stack;
+  font-size: 15pt;
+}
+
+.hero-content {
+  h1,
+  h2 {
+    font-family: "Krona One", $font-stack;
+  }
+
+  h1 {
+    font-size: 2.3em;
+  }
+}
