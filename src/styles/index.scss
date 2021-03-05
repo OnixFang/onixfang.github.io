@@ -1,16 +1,16 @@
 @import "./reset.scss";
+@import "./layout.scss";
 @import "./color.scss";
 @import "./typography.scss";
 @import "./components.scss";
 
-* {
-  color: #fff;
-}
+// Common classes
 
 #welcome-section {
   background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.7)),
     url("../img/code.png");
   height: 100vh;
+  padding-bottom: 0;
 
   .hero-wrapper {
     display: flex;
@@ -18,6 +18,7 @@
     align-items: center;
 
     .hero-content {
+      color: #fff;
       display: flex;
       flex-direction: column;
       align-items: start;
@@ -28,6 +29,7 @@
       }
 
       .btn {
+        color: #fff;
         margin-top: 20px;
       }
     }
@@ -74,7 +76,55 @@
 }
 
 #projects {
-  // .card {
-  //   border: 1px #fff solid;
-  // }
+  .project-tiles {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+    .project-tile {
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+      background-color: $body-background-alt;
+      box-shadow: 0px 8px 10px #111;
+      border: 2px solid $accent-color;
+      border-radius: 8px;
+      transition: transform 200ms;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .tile-image {
+        img {
+          width: 100%;
+          height: auto;
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+        }
+      }
+
+      .tile-content {
+        color: #fff;
+        padding: 10px 20px 20px;
+
+        p {
+          text-align: justify;
+          font-weight: bold;
+        }
+
+        .tile-title {
+          text-align: center;
+          width: 100%;
+          display: inline-block;
+          font-family: $krona-font;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
 }

@@ -3,16 +3,26 @@
 
 // Font stack
 $font-stack: Jura, Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+$krona-font: "krona One", $font-stack;
 
 html {
   font-family: $font-stack;
   font-size: 15pt;
 }
 
+.headline {
+  color: #fff;
+  font-size: 2em;
+  font-family: $krona-font;
+  text-align: center;
+  width: 100%;
+  padding: 40px 0px;
+}
+
 .hero-content {
   h1,
   h2 {
-    font-family: "Krona One", $font-stack;
+    font-family: $krona-font;
   }
 
   h1 {
