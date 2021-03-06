@@ -11,6 +11,7 @@ html {
 }
 
 .headline {
+  background-color: red;
   font-size: 2em;
   font-family: $krona-font;
   width: 100%;
@@ -31,5 +32,18 @@ html {
 
   h1 {
     font-size: 2.3em;
+  }
+}
+
+// Mobile view
+@media (max-width: $mobile-view) {
+  .hero-content {
+    h1 {
+      font-size: 1.5em;
+    }
+
+    h2 {
+      font-size: 1em;
+    }
   }
 }
