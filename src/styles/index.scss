@@ -4,13 +4,16 @@
 @import "./typography.scss";
 @import "./components.scss";
 
+// Common variables
+$hero-border-radious: 8px;
+
 // Common classes
 
 #welcome-section {
   background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.7)),
     url("../img/code.png");
   height: 100vh;
-  padding-bottom: 0;
+  padding: 0;
 
   .hero-wrapper {
     display: flex;
@@ -29,7 +32,6 @@
       }
 
       .btn {
-        color: #fff;
         margin-top: 20px;
       }
     }
@@ -76,23 +78,32 @@
 }
 
 #projects {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    $body-background;
+
   .project-tiles {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
+    margin-left: -20px;
 
     .project-tile {
+      position: relative;
       display: flex;
       flex-direction: column;
-      width: 400px;
-      background-color: $body-background-alt;
-      box-shadow: 0px 8px 10px #111;
-      border: 2px solid $accent-color;
-      border-radius: 8px;
-      transition: transform 200ms;
+      width: 300px;
+      margin-left: 40px;
+      margin-bottom: 40px;
+      background-color: $tertiary-color;
+      box-shadow: 0px 8px 8px #111;
+      border: 3px solid $accent-color;
+      border-radius: $hero-border-radious;
+      transition: transform 200ms, box-shadow 200ms;
 
       &:hover {
-        transform: scale(1.1);
+        transform: scale(1.02);
+        box-shadow: 0px 4px 20px #101010;
       }
 
       a {
@@ -103,26 +114,41 @@
         img {
           width: 100%;
           height: auto;
-          border-top-left-radius: 8px;
-          border-top-right-radius: 8px;
+          border-top-left-radius: $hero-border-radious;
+          border-top-right-radius: $hero-border-radious;
         }
       }
 
-      .tile-content {
+      .tile-title {
+        display: inline-block;
+        font-family: $krona-font;
+        text-align: center;
+        width: 100%;
+        margin: 15px 0px;
         color: #fff;
-        padding: 10px 20px 20px;
+      }
+
+      .tile-content {
+        opacity: 0;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        top: 0px;
+        color: #fff;
+        background-color: rgba(#000000, 0.75);
+        border-radius: $hero-border-radious;
+        transition: opacity 200ms;
+
+        &:hover {
+          opacity: 1;
+        }
 
         p {
           text-align: justify;
           font-weight: bold;
-        }
-
-        .tile-title {
-          text-align: center;
-          width: 100%;
-          display: inline-block;
-          font-family: $krona-font;
-          margin-bottom: 10px;
+          padding: 20px;
         }
       }
     }

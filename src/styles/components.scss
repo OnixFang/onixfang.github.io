@@ -45,11 +45,18 @@
 
 // Buttons
 .btn {
+  color: #fff;
+  font-weight: bold;
   text-decoration: none;
   background-color: $button-background;
-  padding: 10px;
+  padding: 12px;
+  border: 3px solid $tertiary-color;
   border-radius: 5px;
   transition: transform 200ms;
+
+  &.big {
+    font-size: 1.2em;
+  }
 
   &:hover {
     cursor: pointer;

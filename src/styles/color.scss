@@ -5,6 +5,7 @@ $navbar-background: #4472ca;
 
 $primary-color: #48a9a6;
 $secondary-color: #fb3640;
+$tertiary-color: #2b6462;
 $accent-color: #73bfb8;
 
 // Buttons
@@ -12,7 +13,7 @@ $button-background: $primary-color;
 
 // Defaults
 section {
-  background-color: $body-background;
+  background: $body-background;
 
   // &:nth-of-type(even){
   //   background-color: $body-background-alt;
