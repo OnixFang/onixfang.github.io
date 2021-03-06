@@ -1,0 +1,48 @@
+// Google Font
+@import url("https://fonts.googleapis.com/css2?family=Jura&family=Krona+One&display=swap");
+
+// Font stack
+$font-stack: Jura, Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+$krona-font: "krona One", $font-stack;
+
+html {
+  font-family: $font-stack;
+  font-size: 15pt;
+}
+
+.headline {
+  font-size: 2em;
+  font-family: $krona-font;
+  width: 100%;
+}
+
+.headline,
+.lead-in {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.hero-content {
+  h1,
+  h2 {
+    font-family: $krona-font;
+  }
+
+  h1 {
+    font-size: 2.3em;
+  }
+}
+
+// Mobile view
+@media (max-width: $mobile-view) {
+  .hero-content {
+    h1 {
+      font-size: 1.5em;
+    }
+
+    h2 {
+      font-size: 1em;
+    }
+  }
+}

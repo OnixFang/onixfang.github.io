@@ -17,9 +17,6 @@
     "url": "https://github.com/OnixFang/onixwebsite/issues"
   },
   "homepage": "https://github.com/OnixFang/onixwebsite#readme",
-  "dependencies": {
-    "materialize-css": "^1.0.0"
-  },
   "devDependencies": {
     "@babel/core": "^7.12.13",
     "babel-loader": "^8.2.2",
