@@ -1,14 +1,18 @@
 // Color palette
-$body-background: #332e3c;
-$body-background-alt: #1d1a23;
-$navbar-background: #4472ca;
+$dark-black: #1d1a23;
+$light-black: #332e3c;
+$primary-color: #73bfb8;
+$secondary-color: #4472ca;
+$tertiary-color: #fcba04;
+$accent-color-1: #37817e;
+$accent-color-2: #c59f44;
 
-$primary-color: #48a9a6;
-$secondary-color: #fb3640;
-$tertiary-color: #2b6462;
-$accent-color: #73bfb8;
+$red: #fb3640;
 
-// Buttons
+// Theme
+$body-background: $light-black;
+$body-background-alt: $dark-black;
+$navbar-background: $secondary-color;
 $button-background: $primary-color;
 
 // Defaults

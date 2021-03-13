@@ -5,9 +5,6 @@
 @import "./components.scss";
 @import "./animations.scss";
 
-// Common variables
-$hero-border-radious: 8px;
-
 // Common classes
 .animate {
   opacity: 0;
@@ -104,11 +101,19 @@ $hero-border-radious: 8px;
       width: 300px;
       margin-left: 40px;
       margin-bottom: 40px;
-      background-color: $tertiary-color;
       box-shadow: 0px 8px 8px #111;
-      border: 3px solid $accent-color;
-      border-radius: $hero-border-radious;
+      border-radius: 8px;
       transition: transform 200ms, box-shadow 200ms;
+
+      &.personal {
+        background-color: $primary-color;
+        border: 3px solid $accent-color-1;
+      }
+
+      &.pro {
+        background-color: $secondary-color;
+        border: 3px solid $tertiary-color;
+      }
 
       &:hover {
         transform: scale(1.02);
@@ -123,8 +128,8 @@ $hero-border-radious: 8px;
         img {
           width: 100%;
           height: auto;
-          border-top-left-radius: $hero-border-radious;
-          border-top-right-radius: $hero-border-radious;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
         }
       }
 
@@ -147,7 +152,7 @@ $hero-border-radious: 8px;
         top: 0px;
         color: #fff;
         background-color: rgba(#000000, 0.75);
-        border-radius: $hero-border-radious;
+        border-radius: 5px;
         transition: opacity 200ms;
 
         &:hover {
