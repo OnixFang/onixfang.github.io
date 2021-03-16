@@ -34,7 +34,23 @@ html {
   }
 }
 
-// Mobile view
+// Media queries
+
+@include for-tablet-portrait-up {
+  .navbar {
+    ul > li > a {
+      font-size: 0.8em;
+    }
+  }
+}
+
+@include for-tablet-landscape-up {
+  .navbar {
+    ul > li > a {
+      font-size: 1em;
+    }
+  }
+}
 
 @include for-phone-only {
   .hero-content {
