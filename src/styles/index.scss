@@ -242,6 +242,11 @@ html {
 }
 
 #contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+
   .contact-links {
     display: flex;
     flex-wrap: wrap;
@@ -254,6 +259,11 @@ html {
       color: white;
       text-decoration: none;
       margin: 10px 10px;
+      transition: transform 400ms;
+
+      &:hover {
+        transform: scale(1.13);
+      }
 
       .icon {
         margin-right: 15px;
