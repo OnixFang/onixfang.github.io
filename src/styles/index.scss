@@ -5,6 +5,11 @@
 @import "./components.scss";
 @import "./animations.scss";
 
+// Smooth scrolling
+html {
+  scroll-behavior: smooth;
+}
+
 // Common classes
 .animate {
   opacity: 0;
@@ -181,5 +186,12 @@
 #skills {
   .row {
     flex-wrap: wrap;
+  }
+
+  img {
+    padding: 20px;
+    width: auto;
+    max-width: 200px;
+    height: 200px;
   }
 }
