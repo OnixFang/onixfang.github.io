@@ -245,7 +245,12 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh;
+
+  .logo {
+    width: 40%;
+    height: auto;
+    margin: 30px auto;
+  }
 
   .contact-links {
     display: flex;
@@ -274,18 +279,24 @@ html {
 
 #footer {
   background-color: $dark-black;
-  padding-bottom: 10px;
+  padding: 20px 0;
 
   .credits {
+    text-align: center;
     color: #fff;
+    margin-bottom: 20px;
 
     a {
-      color: #fff;
+      color: $secondary-color;
+
+      &:hover {
+        color: $primary-color;
+      }
     }
   }
 
   .copyright {
     color: #fff;
-    margin: 80px auto 0px;
+    margin: 0 auto;
   }
 }
