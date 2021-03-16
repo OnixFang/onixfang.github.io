@@ -3,7 +3,8 @@
     {
       "files": "*.js",
       "options": {
-        "singleQuote": true
+        "singleQuote": true,
+        "printWidth": 120
       }
     }
   ]

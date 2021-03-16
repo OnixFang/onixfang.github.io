@@ -184,14 +184,16 @@ html {
 }
 
 #skills {
-  .row {
+  .icons {
+    display: flex;
     flex-wrap: wrap;
-  }
+    justify-content: center;
 
-  img {
-    padding: 20px;
-    width: auto;
-    max-width: 200px;
-    height: 200px;
+    img {
+      padding: 20px;
+      width: auto;
+      max-width: 100px;
+      height: 100px;
+    }
   }
 }
