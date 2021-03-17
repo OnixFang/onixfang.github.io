@@ -1,3 +1,9 @@
+// Page elements
+const navbar = document.getElementById('navbar');
+const navlinks = Array.from(document.querySelectorAll('.navlink'));
+const navButton = document.getElementById('menu-button');
+const sections = document.querySelectorAll('section');
+
 // Utilities
 function getRandom(range) {
   return Math.floor(Math.random() * range);
@@ -7,10 +13,17 @@ function getRandom(range) {
 document.getElementById('copy-year').innerHTML = new Date().getFullYear();
 
 // Navbar drawer
-const navButton = document.getElementById('menu-button');
 navButton.addEventListener('click', (e) => {
   navButton.classList.toggle('open');
-  document.getElementById('navbar').classList.toggle('open');
+  navbar.classList.toggle('open');
+});
+
+navlinks.forEach((link) => {
+  console.log(link);
+  link.addEventListener('click', (e) => {
+    navButton.classList.remove('open');
+    navbar.classList.remove('open');
+  });
 });
 
 // Picture's click interaction
@@ -54,9 +67,6 @@ elements.forEach((element) => {
 });
 
 // Intersection Observer for navbar
-const sections = document.querySelectorAll('section');
-const navlinks = Array.from(document.querySelectorAll('.navlink'));
-
 const sectionObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
