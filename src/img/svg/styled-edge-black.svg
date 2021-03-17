@@ -7,13 +7,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="200"
-   height="30"
-   viewBox="0 0 200 30"
+   width="100"
+   height="10"
+   viewBox="0 0 100 10"
    version="1.1"
    id="svg8"
    inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
-   sodipodi:docname="top-curve.svg">
+   sodipodi:docname="styled-edge-black.svg">
   <defs
      id="defs2">
     <inkscape:path-effect
@@ -35,13 +35,13 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="43.61661"
-     inkscape:cy="45.127729"
+     inkscape:zoom="5.6568543"
+     inkscape:cx="46.636192"
+     inkscape:cy="6.7977463"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
-     showgrid="false"
+     showgrid="true"
      inkscape:snap-global="true"
      units="px"
      scale-x="1"
@@ -49,7 +49,23 @@
      inkscape:window-height="987"
      inkscape:window-x="1432"
      inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     objecttolerance="20"
+     inkscape:snap-path-clip="true"
+     inkscape:snap-path-mask="true"
+     guidetolerance="10000"
+     inkscape:snap-tangential="true"
+     inkscape:snap-perpendicular="true"
+     inkscape:lockguides="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid24" />
+  </sodipodi:namedview>
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -67,8 +83,9 @@
      inkscape:groupmode="layer"
      id="layer1">
     <path
-       style="fill:#cfdbf2;fill-opacity:1;stroke:none"
-       d="m -0.67500991,52.101295 c 0,-34.275442 0.16518838,-50.002551 0.52519755,-50.002551 0.28885863,0 1.36845916,0.4246374 2.39911226,0.9436388 3.0986045,1.5603502 17.0652781,7.1070762 24.4580901,9.7132882 56.970439,20.083974 110.3458,17.67029 167.22995,-7.5622941 3.83709,-1.7020481 7.07589,-3.0946329 7.19734,-3.0946329 0.12145,0 0.22082,22.349928 0.22082,49.666506 v 49.66651 l -62.96572,0.33604 c -34.63115,0.18483 -80.088013,0.33605 -101.015258,0.33605 H -0.67500991 Z"
-       id="path30" />
+       style="fill:#000000;fill-opacity:1;stroke:none"
+       d="m 0,3 5,-3 5,3 5,-3 5,3 5,-3 5,3 5,-3 5,3 5,-3 5,3 5,-3 5,3 5,-3 5,3 5,-3 5,3 5,-3 5,3 5,-3 5,3 c 0,2 0,4 0,7 H 0 Z"
+       id="path30"
+       sodipodi:nodetypes="cccccccccccccccccccccccc" />
   </g>
 </svg>

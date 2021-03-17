@@ -208,8 +208,12 @@ html {
 
 #skills {
   position: relative;
-  background-color: $accent-color-3;
-  padding-top: 80px;
+  padding-top: 0;
+
+  .container {
+    background-color: $accent-color-3;
+    padding: 80px 0;
+  }
 
   .headline {
     color: #000;
@@ -230,13 +234,33 @@ html {
     }
   }
 
-  .top-curve {
+  .top,
+  .bottom {
     position: relative;
-    margin-bottom: 80px;
-    height: 40px;
+  }
+
+  .top {
+    margin-bottom: -5px;
+  }
+
+  .bottom {
+    transform: rotateX(180deg);
+    margin-top: -5px;
+  }
+
+  .edge,
+  .shadow {
+    display: block;
+    position: relative;
     width: 100%;
-    transform: rotateZ(40deg);
-    background-color: green;
+    height: auto;
+  }
+
+  .shadow {
+    position: absolute;
+    top: -5%;
+    left: -3%;
+    opacity: 0.5;
   }
 }
 
@@ -244,6 +268,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 0px;
 
   .logo {
     width: 40%;
@@ -298,19 +323,4 @@ html {
     color: #fff;
     margin: 0 auto;
   }
-}
-
-.top-curve,
-.bottom-curve {
-  display: block;
-  width: 100%;
-}
-
-.top-curve {
-  margin-bottom: -5px;
-}
-
-.bottom-curve {
-  transform: rotateX(180deg);
-  margin-top: -5px;
 }
