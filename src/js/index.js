@@ -6,6 +6,13 @@ function getRandom(range) {
 // Copyright year
 document.getElementById('copy-year').innerHTML = new Date().getFullYear();
 
+// Navbar drawer
+const navButton = document.getElementById('menu-button');
+navButton.addEventListener('click', (e) => {
+  navButton.classList.toggle('open');
+  document.getElementById('navbar').classList.toggle('open');
+});
+
 // Picture's click interaction
 const salutations = ['Hello!', 'Hi!', 'Hey!', "What's up!?"];
 let helloTimeOut;
