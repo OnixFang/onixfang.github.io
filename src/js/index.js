@@ -3,6 +3,9 @@ function getRandom(range) {
   return Math.floor(Math.random() * range);
 }
 
+// Copyright year
+document.getElementById('copy-year').innerHTML = new Date().getFullYear();
+
 // Picture's click interaction
 const salutations = ['Hello!', 'Hi!', 'Hey!', "What's up!?"];
 let helloTimeOut;
