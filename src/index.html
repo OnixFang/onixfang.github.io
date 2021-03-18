@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ulises Taveras | Portfolio</title>
+</head>
+
+<body>
+  <nav id="navbar" class="navbar center fixed">
+    <div id="menu-button">
+      <span class="top bar"></span>
+      <span class="middle bar"></span>
+      <span class="bottom bar"></span>
+    </div>
+    <ul>
+      <li>
+        <a href="#welcome-section" class="navlink">Home</a>
+      </li>
+      <li>
+        <a href="#projects" class="navlink">Projects</a>
+      </li>
+      <li>
+        <a href="#skills" class="navlink">Skills</a>
+      </li>
+      <li>
+        <a href="#contact" class="navlink">Contact me</a>
+      </li>
+      <li>
+        <a id="profile-link" class="navlink" href="https://github.com/onixfang" target="_blank">My GitHub</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section id="welcome-section" class="valign-wrapper">
+    <div class="hero-wrapper">
+      <div class="hero-content white-text animate" data-animation="slide-in-left">
+        <h1>Ulises Taveras</h1>
+        <h2>Full-stack developer</h2>
+        <!-- <a href="/about-me" class="btn big">About Me</a> -->
+      </div>
+      <div class="hero-picture">
+        <img src="img/me.jpg" alt="Ulises Taveras" class="animate" data-animation="scale-in">
+        <div class="hello"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="row">
+      <div class="col">
+        <h1 class="headline animate" data-animation="slide-in-left">Projects</h1>
+        <p class="lead-in animate" data-animation="slide-in-right">Hover over any project to see a brief description</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="project-tiles">
+        <!-- Github Viewer 2 -->
+        <div class="project-tile personal animate" data-animation="slide-in-bottom">
+          <a href="http://githubviewer2.herokuapp.com/" target="_blank">
+            <div class="tile-image">
+              <img src="./img/githubviewer2-search.png">
+            </div>
+            <span class="tile-title">Github Viewer 2</span>
+            <div class="tile-content">
+              <p>A very simple app that uses GitHub's API to search for users. I made it as part of PluralSight's
+                AngularJS course, but remade it later after learning Angular 2+. Try "onixfang" in the search bar!</p>
+            </div>
+          </a>
+          <span class="project-type">Personal project</span>
+        </div>
+
+        <!-- Greek God Meals -->
+        <div class="project-tile pro animate" data-animation="slide-in-bottom">
+          <a href="https://www.greekgodmeals.com/" target="_blank">
+            <div class="tile-image">
+              <img src="./img/greekgodmeals.png">
+            </div>
+            <span class="tile-title">Greek God Meals</span>
+            <div class="tile-content">
+              <p>The client already had the design and just needed me to code the site. I made this website with static
+                HTML, CSS (compiled from SASS) and JavaScript. I used Webpack to bundle the site for better loading
+                times and also to create a comfortable development environment.</p>
+            </div>
+          </a>
+          <span class="project-type">Professional project</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="top-tab">
+      <img class="tab" src="./img/svg/styled-tab.svg" alt="styled-tab" />
+    </div>
+    <div class="container">
+      <div class="row">
+        <h1 class="headline animate" data-animation="slide-in-top">Skills</h1>
+      </div>
+      <div class="row">
+        <div class="icons">
+          <img src="./img/svg/html5.svg" alt="HTML" class="animate" data-animation="scale-in">
+          <img src="./img/svg/css3.svg" alt="CSS3" class="animate" data-animation="scale-in">
+          <img src="./img/svg/javascript.svg" alt="JavaScript" class="animate" data-animation="scale-in">
+          <img src="./img/svg/sass.svg" alt="SASS" class="animate" data-animation="scale-in">
+          <img src="./img/svg/react.svg" alt="React" class="animate" data-animation="scale-in">
+          <img src="./img/svg/nodejs.svg" alt="Node.js" class="animate" data-animation="scale-in">
+          <img src="./img/svg/webpack.svg" alt="Webpack" class="animate" data-animation="scale-in">
+          <img src="./img/svg/angular.svg" alt="Angular" class="animate" data-animation="scale-in">
+          <img src="./img/svg/vuejs.svg" alt="Vue.js" class="animate" data-animation="scale-in">
+          <img src="./img/svg/jquery.svg" alt="JQuery" class="animate" data-animation="scale-in">
+          <img src="./img/svg/bootstrap.svg" alt="Bootstrap" class="animate" data-animation="scale-in">
+          <img src="./img/svg/materialize.svg" alt="Materialize CSS" class="animate" data-animation="scale-in">
+          <img src="./img/svg/mongodb.svg" alt="MongoDB" class="animate" data-animation="scale-in">
+          <img src="./img/svg/sql.svg" alt="SQL" class="animate" data-animation="scale-in">
+          <img src="./img/svg/c-sharp.svg" alt="C#" class="animate" data-animation="scale-in">
+        </div>
+      </div>
+    </div>
+    <div class="bottom-tab">
+      <img class="shadow" src="./img/svg/styled-tab-black.svg" alt="styled-tab" />
+      <img class="tab" src="./img/svg/styled-tab-dark.svg" alt="styled-tab" />
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="animate" data-animation="fade-in">
+      <div class="row">
+        <div class="logo">
+          <img src="./img/svg/logo-black.svg" class="shadow" alt="logo">
+          <img src="./img/svg/logo.svg" alt="logo">
+        </div>
+      </div>
+      <div class="row">
+        <h1 class="headline">Contact me</h1>
+      </div>
+      <div class="row">
+        <div class="contact-links">
+          <a href="https://github.com/onixfang" target="_blank"><span class="icon github"></span>GitHub</a>
+          <a href="https://www.linkedin.com/in/utaveras/" target="_blank"><span
+              class="icon linkedin"></span>LinkedIn</a>
+          <a href="mailto:twily.dev@outlook.com"><span class="icon email"></span>Send an email</a>
+          <a href="https://www.freecodecamp.org/onixfang" target="_blank"><span
+              class="icon freecodecamp"></span>freeCodeCamp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="credits">
+      <div>Free icons from <a href="https://seeklogo.com/">seeklogo</a>, <a href="https://iconape.com/">iconApe</a>, <a
+          href="https://worldvectorlogo.com/">WorldVectorLogo</a>,</div>
+
+      <div>And some icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> and <a
+          href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel
+          perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>.</div>
+    </div>
+    <div class="row">
+      <div class="copyright">
+        &copy; <span id="copy-year"></span> Ulises Taveras
+      </div>
+    </div>
+  </footer>
+
+  <!-- freeCodeCamp test suite -->
+  <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</body>
+
+</html>

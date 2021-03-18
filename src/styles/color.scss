@@ -1,0 +1,26 @@
+// Color palette
+$dark-black: #1d1a23;
+$light-black: #332e3c;
+$primary-color: #73bfb8;
+$secondary-color: #4472ca;
+$tertiary-color: #fcba04;
+$accent-color-1: #37817e;
+$accent-color-2: #c59f44;
+$accent-color-3: #cfdbf2;
+
+$red: #fb3640;
+
+// Theme
+$body-background: $light-black;
+$body-background-alt: $dark-black;
+$navbar-background: $secondary-color;
+$button-background: $primary-color;
+
+// Defaults
+section {
+  background: $body-background;
+
+  // &:nth-of-type(even){
+  //   background-color: $body-background-alt;
+  // }
+}

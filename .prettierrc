@@ -1,0 +1,11 @@
+{
+  "printWidth": 130,
+  "overrides": [
+    {
+      "files": "*.js",
+      "options": {
+        "singleQuote": true
+      }
+    }
+  ]
+}
