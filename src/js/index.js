@@ -19,7 +19,6 @@ navButton.addEventListener('click', (e) => {
 });
 
 navlinks.forEach((link) => {
-  console.log(link);
   link.addEventListener('click', (e) => {
     navButton.classList.remove('open');
     navbar.classList.remove('open');

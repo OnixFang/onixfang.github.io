@@ -91,7 +91,7 @@ html {
       }
 
       &:active {
-        transform: scale(0.93);
+        transform: scale(0.97);
       }
     }
 
@@ -209,10 +209,11 @@ html {
 #skills {
   position: relative;
   padding-top: 0;
+  overflow: hidden;
 
   .container {
-    background-color: $accent-color-3;
-    padding: 80px 0;
+    background: linear-gradient(#fff, $accent-color-3, darken($accent-color-3, 10%));
+    padding: 60px 0 20px;
   }
 
   .headline {
@@ -234,33 +235,43 @@ html {
     }
   }
 
-  .top,
-  .bottom {
+  // Styled tab
+  .top-tab,
+  .bottom-tab {
     position: relative;
-  }
-
-  .top {
     margin-bottom: -5px;
   }
 
-  .bottom {
-    transform: rotateX(180deg);
+  .bottom-tab {
+    transform: rotate(180deg);
     margin-top: -5px;
+    margin-bottom: 0;
   }
 
-  .edge,
+  .tab,
   .shadow {
     display: block;
     position: relative;
+    background-size: 100%;
     width: 100%;
     height: auto;
   }
 
   .shadow {
     position: absolute;
-    top: -5%;
-    left: -3%;
-    opacity: 0.5;
+    opacity: 0.35;
+
+    @include for-phone-only {
+      top: -30%;
+    }
+
+    @include for-tablet-portrait-up {
+      top: -15%;
+    }
+
+    @include for-desktop-up {
+      top: -8%;
+    }
   }
 }
 
@@ -270,10 +281,31 @@ html {
   align-items: center;
   padding-top: 0px;
 
+  .row:first-of-type {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+  }
+
   .logo {
+    position: relative;
     width: 40%;
-    height: auto;
-    margin: 30px auto;
+
+    img,
+    .shadow {
+      display: block;
+      position: relative;
+      width: 100%;
+      height: auto;
+      margin: auto;
+    }
+
+    .shadow {
+      position: absolute;
+      top: 7px;
+      left: 7px;
+      opacity: 0.5;
+    }
   }
 
   .contact-links {
