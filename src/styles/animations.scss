@@ -83,3 +83,43 @@
     opacity: 1;
   }
 }
+
+@keyframes skills-reveal {
+  0% {
+    height: 48%;
+  }
+
+  100% {
+    height: 0%;
+  }
+}
+
+@keyframes skills-hide {
+  0% {
+    height: 0%;
+  }
+
+  100% {
+    height: 48%;
+  }
+}
+
+@keyframes notch-top-open {
+  0% {
+    right: -28px;
+  }
+
+  100% {
+    right: 0px;
+  }
+}
+
+@keyframes notch-bottom-open {
+  0% {
+    left: -28px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}

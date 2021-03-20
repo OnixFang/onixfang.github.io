@@ -8,7 +8,7 @@
 // Smooth scrolling
 html {
   scroll-behavior: smooth;
-  background-color: $light-black;
+  background-color: $light-purple;
 }
 
 // Common classes
@@ -208,12 +208,16 @@ html {
 
 #skills {
   position: relative;
-  padding-top: 0;
+  padding: 0;
   overflow: hidden;
+  background: linear-gradient(#fff, $accent-color-3, darken($accent-color-3, 10%));
 
   .container {
-    background: linear-gradient(#fff, $accent-color-3, darken($accent-color-3, 10%));
-    padding: 60px 0 20px;
+    padding: 100px 0;
+  }
+
+  .skill {
+    opacity: 0;
   }
 
   .headline {
@@ -238,39 +242,65 @@ html {
   // Styled tab
   .top-tab,
   .bottom-tab {
-    position: relative;
-    margin-bottom: -5px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .top-tab {
+    top: 0;
+    justify-content: flex-start;
+
+    .body {
+      background: linear-gradient(0deg, #8c2e3cff, darken(#8c2e3cff, 20%));
+    }
   }
 
   .bottom-tab {
-    transform: rotate(180deg);
-    margin-top: -5px;
-    margin-bottom: 0;
+    bottom: 0;
+    justify-content: flex-end;
+
+    .body {
+      background: linear-gradient(#8c2e3cff, darken(#8c2e3cff, 20%));
+    }
   }
 
-  .tab,
-  .shadow {
+  .body {
+    width: 100%;
+    height: 48%;
+    z-index: 5;
+    opacity: 1;
+  }
+
+  .notch {
     display: block;
     position: relative;
-    background-size: 100%;
-    width: 100%;
-    height: auto;
-  }
+    width: 50%;
+    height: 60px;
 
-  .shadow {
-    position: absolute;
-    opacity: 0.35;
-
-    @include for-phone-only {
-      top: -30%;
+    &.top {
+      img {
+        right: -28px;
+      }
     }
 
-    @include for-tablet-portrait-up {
-      top: -15%;
+    &.bottom {
+      align-self: flex-end;
+
+      img {
+        left: -28px;
+      }
     }
 
-    @include for-desktop-up {
-      top: -8%;
+    img {
+      display: block;
+      position: absolute;
+
+      &.inverse {
+        transform: rotate(180deg);
+      }
     }
   }
 }
@@ -279,7 +309,6 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 0px;
 
   .row:first-of-type {
     display: flex;
@@ -334,7 +363,7 @@ html {
 }
 
 #footer {
-  background-color: $dark-black;
+  background-color: $dark-purple;
   padding: 20px 0;
 
   .credits {
