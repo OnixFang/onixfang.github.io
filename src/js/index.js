@@ -77,15 +77,29 @@ const skillsObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((section) => {
       const tabs = Array.from(document.getElementsByClassName('body'));
-      const notches = Array.from(document.getElementsByClassName('notch'));
+      const topNotch = document.querySelector('.notch.top img');
+      const bottomNotch = document.querySelector('.notch.bottom img');
+      const skills = Array.from(document.querySelectorAll('.skill'));
 
       if (section.isIntersecting) {
         tabs.forEach((tab) => {
-          tab.style.animation = `skills-reveal 500ms 300ms forwards`;
+          topNotch.style.animation = 'notch-top-open 500ms 100ms forwards';
+          bottomNotch.style.animation = 'notch-bottom-open 500ms 100ms forwards';
+          tab.style.animation = 'skills-reveal 500ms 600ms forwards';
+
+          skills.forEach((skill) => {
+            skill.style.animation = `scale-in 500ms ease ${600 + getRandom(200)}ms forwards`;
+          });
         });
       } else {
         tabs.forEach((tab) => {
-          tab.style.animation = `skills-hide 500ms forwards`;
+          topNotch.style.animation = 'none';
+          bottomNotch.style.animation = 'none';
+          tab.style.animation = 'skills-hide 500ms forwards';
+
+          skills.forEach((skill) => {
+            skill.style.animation = 'none';
+          });
         });
       }
     });
